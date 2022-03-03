@@ -1,0 +1,15 @@
+h1 {
+    /* Typography */
+    font-size: 3em;
+    font-family: Raleway;
+    font-style: italic;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+#heroInformationContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

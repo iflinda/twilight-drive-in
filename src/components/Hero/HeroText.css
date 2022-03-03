@@ -1,0 +1,54 @@
+svg {
+    /* Position & Layout */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Box Model */
+    height: 100%;
+
+    /* Typography */
+    font-size: 4.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+svg rect {
+    fill: white;
+    mask: url(#mask);
+}
+
+#lowerHeroText {
+    transform: translateY(60px);
+}
+
+@media screen and (min-width: 600px) {
+    svg {
+        font-size: 8em;
+    }
+
+    #lowerHeroText {
+        transform: translateY(110px);
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    svg {
+        font-size: 16em;
+    }
+
+    #lowerHeroText {
+        transform: translateY(210px);
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    svg {
+        font-size: 30em;
+    }
+
+    #lowerHeroText {
+        transform: translateY(400px);
+    }
+}

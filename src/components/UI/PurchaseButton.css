@@ -1,0 +1,17 @@
+.buttonStyle {
+    /* Box Model */
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0.5em;
+    margin: 0.5em;
+
+    /* Background */
+    background-color: #94004E;
+
+    /* Typography */
+    font-size: 2em;
+    font-family: Raleway;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}

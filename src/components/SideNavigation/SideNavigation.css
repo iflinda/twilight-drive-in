@@ -1,0 +1,27 @@
+#sideNavigation  {
+    /* Position & Layout */
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    flex-direction: column;
+
+    /* Display * Visibility */
+    display: flex;
+}
+
+#sideNavigation img {
+    /* Box Model */
+    margin-left: 20px;
+    margin-bottom: 5px;
+    width: 40px;
+}
+
+#sideNavigation img:hover {
+    animation: sway 2s infinite;
+}
+
+@keyframes sway {
+    0% {transform: rotate(8deg);}
+    50% {transform: rotate(-5deg);}
+    100%{transform: rotate(8deg);}
+}
