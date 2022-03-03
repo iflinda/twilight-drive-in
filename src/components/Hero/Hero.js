@@ -5,12 +5,12 @@ import PurchaseButton from "../UI/PurchaseButton";
 
 export default function Hero() {
   return (
-    <div>
+    <div id="home">
       <HeroVideoBackground />
       <HeroText />
       <div id="heroInformationContainer">
         <h1>Metro Vancouver`s only drive-in theatre.</h1>
-        <PurchaseButton title="Browse Tickets" />
+        <PurchaseButton title="Buy Tickets" />
       </div>
     </div>
   );

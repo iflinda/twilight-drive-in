@@ -1,5 +1,6 @@
 #sideNavigation  {
     /* Position & Layout */
+    visibility: hidden;
     position: fixed;
     z-index: 1;
     top: 50%;
@@ -11,7 +12,7 @@
 
 #sideNavigation img {
     /* Box Model */
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 5px;
     width: 40px;
 }
@@ -24,4 +25,18 @@
     0% {transform: rotate(8deg);}
     50% {transform: rotate(-5deg);}
     100%{transform: rotate(8deg);}
+}
+
+@media screen and (min-width: 650px) {
+    #sideNavigation {
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 2650px) {
+    #sideNavigation img {
+        /* Box Model */
+        margin-left: 100px;
+        width: 100px;
+    }
 }

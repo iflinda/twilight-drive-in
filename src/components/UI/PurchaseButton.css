@@ -9,9 +9,25 @@
     background-color: #94004E;
 
     /* Typography */
-    font-size: 2em;
+    font-size: 1em;
     font-family: Raleway;
     font-weight: 700;
     text-decoration: none;
     color: white;
+}
+
+.buttonStyle:hover {
+    background-color: #460B2A;
+}
+
+@media screen and (min-width: 600px) {
+    .buttonStyle {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 2650px) {
+    .buttonStyle {
+        font-size: 3em;
+    }
 }
