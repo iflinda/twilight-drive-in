@@ -1,9 +1,10 @@
 import Navigation from "./components/Navigation/Navigation";
 import Hero from "./components/Hero/Hero";
-import SideNavigation from "./components/SideNavigation/SideNavigation";
+import Sidebar from "./components/SideNavigation/SideNavigation";
+import BuyTickets from "./components/BuyTickets/BuyTickets";
 import "./global.css";
 
-function App() {
+export default function App() {
   return (
     <div>
       <nav className="container">
@@ -13,10 +14,11 @@ function App() {
         <Hero />
       </header>
       <aside>
-        <SideNavigation />
+        <Sidebar />
       </aside>
+      <main>
+        <BuyTickets />
+      </main>
     </div>
   );
 }
-
-export default App;

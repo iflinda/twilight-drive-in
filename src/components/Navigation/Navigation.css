@@ -1,6 +1,6 @@
 #navigation {
     /* Position & Layout */
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 30px;
     justify-content: center;
@@ -34,6 +34,13 @@
     /* Typography */
     text-decoration: none;
     color: #94004E;
+}
+
+#navigation a:hover {
+    color: #460B2A;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: 0.34em;
 }
 
 .navigationContainer {
@@ -70,6 +77,10 @@
         margin-left: 4em;
         margin-right: 4em;
     }
+    
+    #navigation a:hover {
+        text-decoration-thickness: 0.27em;
+    }
 }
 
 @media screen and (min-width: 2650px) {
@@ -80,6 +91,10 @@
     #navigation a {
         margin-left: 4em;
         margin-right: 4em;
+    }
+
+    #navigation a:hover {
+        text-decoration-thickness: 0.2em;
     }
 
     #logo {
