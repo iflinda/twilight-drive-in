@@ -9,14 +9,18 @@ export default function BuyTickets() {
   const [movies, setMovies] = useState([]);
 
   async function fetchMovies() {
-    let allMovies = [];
-    for (let i = 0; i < ids.length; i++) {
-      let id = ids[i].id;
-      let response = await axios.get(`https://www.omdbapi.com/?i=${id}&apikey=${apiKey}`);
-      let data = response.data;
-      allMovies.push(data);
+    try {
+      let allMovies = [];
+      for (let i = 0; i < ids.length; i++) {
+        let id = ids[i].id;
+        let response = await axios.get(`https://www.omdbapi.com/?i=${id}&apikey=${apiKey}`);
+        let data = await response.data;
+        allMovies.push(data);
+      }
+      setMovies(allMovies);
+    } catch (error) {
+      console.log(error);
     }
-    setMovies(allMovies);
   }
 
   useEffect(() => {
