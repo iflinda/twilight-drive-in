@@ -1,8 +1,5 @@
-/* eslint-disable react/jsx-key */
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
+import axios from "axios";
 import { useEffect, useState } from "react";
 import BuyTicketsCard from "./BuyTicketsCard";
 import "./BuyTickets.css";
@@ -10,33 +7,26 @@ import "./BuyTickets.css";
 export default function BuyTickets() {
   const apiKey = process.env.REACT_APP_IMBD_API_KEY;
   const ids = [{ id: "tt1877830" }, { id: "tt10838180" }];
+  const [movies, setMovies] = useState([]);
 
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [movies, setMovies] = useState("");
-  const allMovies = [];
-
-  async function handleFetchRequest(id) {
-    const response = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=${apiKey}`);
-    const result = await response.json();
-    allMovies.push(result);
-  }
-
- function fetchMovies() {
-    ids.map((data) => {
-      let id = data.id;
-      handleFetchRequest(id);
-      setIsLoaded(true);
-      setMovies(allMovies);
-    });
+  async function fetchMovies() {
+    let allMovies = [];
+    for (let i = 0; i < ids.length; i++) {
+      let id = ids[i].id;
+      let response = await axios.get(`http://www.omdbapi.com/?i=${id}&apikey=${apiKey}`);
+      let data = response.data;
+      allMovies.push(data);
+    }
+    setMovies(allMovies);
   }
 
   useEffect(() => {
     fetchMovies();
   }, []);
 
-  if (isLoaded) {
-    return <div><BuyTicketsCard movies={movies} /></div>;
-  } else {
-    return <div>Bye</div>;
-  }
+  return (
+    <div id="buyTickets">
+      <BuyTicketsCard moviesData={movies} />
+    </div>
+  );
 }

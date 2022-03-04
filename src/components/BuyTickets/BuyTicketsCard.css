@@ -1,0 +1,22 @@
+.movieArticle {
+    justify-content: center;
+    display: flex;
+}
+
+.tags {
+    display: flex;
+    width: 50%;
+    list-style: none;
+}
+
+.movieLeftSideFlex {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.movieRightSideFlex {
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+}

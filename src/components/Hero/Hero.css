@@ -9,6 +9,7 @@ h1 {
 
 #home {
     height: 100vh;
+    padding-bottom: 5em;
 }
 
 #heroInformationContainer {
