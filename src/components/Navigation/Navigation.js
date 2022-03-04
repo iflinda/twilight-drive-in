@@ -16,13 +16,18 @@ export default function Navigation() {
             Tickets
           </HashLink>
         </li>
-        <li key="faqs">
-          <HashLink smooth to="#home">
-            FAQ
+        <li key="buyTickets">
+          <HashLink smooth to="#">
+            FAQS
+          </HashLink>
+        </li>
+        <li key="buyTickets">
+          <HashLink smooth to="#">
+            Directions
           </HashLink>
         </li>
         <li key="cart">
-          <HashLink smooth to="#home">
+          <HashLink smooth to="#">
             <img id="cart" src={cart} alt="Purple shopping cart."></img>
           </HashLink>
         </li>

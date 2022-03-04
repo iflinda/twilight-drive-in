@@ -1,0 +1,31 @@
+#footerLogoText {
+    font-size: 3em;
+}
+
+#footerLogo {
+    font-size: 0.5em;
+    color: white;
+}
+
+.footerContainer {
+    /* Position & Layout */
+    position: absolute;
+    align-items: center;
+
+    /* Display & Visibility */
+    display: flex;
+
+    /* Background */
+    background-color: #3A272E;
+    
+    /* Box Model */
+    margin-bottom: 5em;
+    width: 100%;
+    height: 10em;
+
+    font-size: 1.2em;
+}
+
+h3 {
+    color: white;
+}

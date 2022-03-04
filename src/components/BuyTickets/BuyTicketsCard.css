@@ -1,8 +1,16 @@
 .movieArticle {
-    display: flex;
+    /* Position & Layout */
     flex-direction: column;
+
+    /* Display & Visibility */
+    display: flex;
+
+    /* Box Model */
     margin-bottom: 5em;
-    width: 100vw;;
+    width: 100vw;
+
+    /* Background */
+    background-color: white;
 }
 
 .movieLeftSideFlex h2 {
@@ -15,14 +23,20 @@
 }
 
 .tags li {
+    /* Box Model */
     margin-right: 1em;
     margin-right: 1em;
+    border-radius: 5px;
     padding: 0.5em 1em 0.5em 1em;
     margin-bottom: 1em;
+
+    /* Background */
     background-color: #E7E7E7;
+
+    /* Typography */
     font-weight: 700;
     list-style: none;
-    border-radius: 5px;
+
 }
 
 .movieLeftSideFlex {
@@ -48,16 +62,6 @@
     padding-bottom: 1.5em;
 }
 
-@media screen and (min-width: 350px) {
-    .movieArticle p {
-        font-size: 1em;
-    }
-
-    .tags li {
-        font-size: 0.8em;
-    }
-}
-
 @media screen and (min-width: 280px) {
     .movieArticle h2 {
         font-size: 1.2em;
@@ -76,9 +80,23 @@
     }
 }
 
+@media screen and (min-width: 350px) {
+    .movieArticle p {
+        font-size: 1em;
+    }
+
+    .tags li {
+        font-size: 0.8em;
+    }
+}
+
 @media screen and (min-width: 550px) {
     .movieArticle img {
         width: 110%;
+    }
+
+    .moviePlotText {
+        margin-top: 0;
     }
 
     .tags {

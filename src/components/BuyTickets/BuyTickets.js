@@ -2,7 +2,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import BuyTicketsCard from "./BuyTicketsCard";
-import "./BuyTickets.css";
 
 export default function BuyTickets() {
   const apiKey = process.env.REACT_APP_IMBD_API_KEY;
