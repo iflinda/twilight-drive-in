@@ -1,12 +1,28 @@
 .movieArticle {
-    justify-content: center;
     display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+    width: 100vw;;
+}
+
+.movieLeftSideFlex h2 {
+    margin-bottom: 0.5em;
 }
 
 .tags {
     display: flex;
-    width: 50%;
+    visibility: hidden;
+}
+
+.tags li {
+    margin-right: 1em;
+    margin-right: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+    margin-bottom: 1em;
+    background-color: #E7E7E7;
+    font-weight: 700;
     list-style: none;
+    border-radius: 5px;
 }
 
 .movieLeftSideFlex {
@@ -18,5 +34,86 @@
 .movieRightSideFlex {
     flex-direction: column;
     display: flex;
-    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.movieRightSideFlex .buttonStyle {
+    font-size: 1em;
+}
+
+.moviePlotText {
+    margin-top: -1.5em;
+    padding-bottom: 1.5em;
+}
+
+@media screen and (min-width: 350px) {
+    .movieArticle p {
+        font-size: 1em;
+    }
+
+    .tags li {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 280px) {
+    .movieArticle h2 {
+        font-size: 1.2em;
+    }
+
+    .movieArticle p {
+        font-size: 1em;
+    }
+
+    .movieRightSideFlex .buttonStyle {
+        font-size: 0.8em;
+    }
+
+    .movieArticle img {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .movieArticle img {
+        width: 110%;
+    }
+
+    .tags {
+        padding-top: 1em;
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .movieArticle {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        padding: 5em;
+        width: 80%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .movieArticle img {
+        width: 80%;
+    }
+
+    .movieRightSideFlex {
+        width: 50%;
+    }
+
+    .movieArticle h2 {
+        font-size: 1.3em;
+    }
+
+    .movieArticle p{
+        font-size: 1.2em;
+    }
+
+    .tags li {
+        font-size: 0.8em;
+    }
 }

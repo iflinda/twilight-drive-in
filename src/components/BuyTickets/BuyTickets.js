@@ -6,7 +6,7 @@ import "./BuyTickets.css";
 
 export default function BuyTickets() {
   const apiKey = process.env.REACT_APP_IMBD_API_KEY;
-  const ids = [{ id: "tt1877830" }, { id: "tt10838180" }];
+  const ids = [{ id: "tt1877830" }, { id: "tt10838180" }, { id: "tt10872600" }, { id: "tt1464335" }];
   const [movies, setMovies] = useState([]);
 
   async function fetchMovies() {

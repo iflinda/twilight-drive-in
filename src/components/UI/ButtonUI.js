@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import "./PurchaseButton.css";
+import "./ButtonUI.css";
 
-export default function PurchaseButton(props) {
+export default function ButtonUI(props) {
   return (
     <a className="buttonStyle" href="#browseTickets">
       {props.title}

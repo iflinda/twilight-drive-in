@@ -1,6 +1,5 @@
 import { HashLink } from "react-router-hash-link";
 import "./Navigation.css";
-import logo from "../../images/logo.svg";
 import cart from "../../images/cart.svg";
 
 export default function Navigation() {
@@ -15,11 +14,6 @@ export default function Navigation() {
         <li key="buyTickets">
           <HashLink smooth to="#buyTickets">
             Tickets
-          </HashLink>
-        </li>
-        <li key="logo">
-          <HashLink smooth to="#home">
-            <img id="logo" src={logo} alt="Twilight Drive-in Logo"></img>
           </HashLink>
         </li>
         <li key="faqs">

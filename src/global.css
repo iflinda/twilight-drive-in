@@ -22,5 +22,11 @@ img {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 80%;
+    }
 }
