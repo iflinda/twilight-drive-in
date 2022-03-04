@@ -11,17 +11,17 @@ export default function Navigation() {
             Home
           </HashLink>
         </li>
-        <li key="buyTickets">
+        <li key="tickets">
           <HashLink smooth to="#buyTickets">
             Tickets
           </HashLink>
         </li>
-        <li key="buyTickets">
+        <li key="faqs">
           <HashLink smooth to="#">
             FAQS
           </HashLink>
         </li>
-        <li key="buyTickets">
+        <li key="directions">
           <HashLink smooth to="#">
             Directions
           </HashLink>
