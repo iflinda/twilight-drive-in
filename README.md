@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Twilight Drive-in Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌐 [Website Link](https://twilight-drive-in.herokuapp.com/)
 
-## Available Scripts
+🎨 [Figma Link](https://www.figma.com/file/MUh1bnRNo73hy5daQZdBa6/Twilight-Drive-in?node-id=0%3A1)
 
-In the project directory, you can run:
+**Twilight Drive-in** is a redesign of a website for cinema lovers in the Metro Vancouver area. I focused on responsive web design and modular code throughout the development process.
 
-### `npm start`
+## Live Examples
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Twilight Drive-in](![image](https://user-images.githubusercontent.com/68607795/156816698-d9f7ec7f-8148-402e-bff4-67f1579e8705.png))
+![About](![image](https://user-images.githubusercontent.com/68607795/156816739-cb8eaf5d-aafe-4646-a905-99cd5748ae4e.png))
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Languages
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-### `npm run build`
+### Frameworks & Libraries
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Design
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tools & Platforms
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
-### `npm run eject`
+## Instructions 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clone the Repository.
+```
+git clone https://github.com/iflinda/twilight-drive-in.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Open the folder from the terminal.
+```
+cd twilight-drive-in
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3.  Install any dependencies.
+```
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. Build the production environment.
+```
+npm run build
+```
 
-## Learn More
+### 5. Build the production environment.
+```
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 6. Run the application on a local server.
+```
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 6. Open a web browser and type: 
+```
+http://localhost:3000/
+```
 
-### Code Splitting
+### 7. Enjoy! 🎉
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Connect with Me
 
-### Analyzing the Bundle Size
+Feel free to connect with me, I'm always looking to meet new developers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+📧 [informlinda@gmal.com](mailto:informlinda@gmail.com)
 
-### Making a Progressive Web App
+🌐 [Website](https://www.lindaful.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+💼 [LinkedIn](https://www.linkedin.com/in/iflinda)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+💻 [Devpost](https://devpost.com/iflinda)
