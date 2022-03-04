@@ -13,7 +13,7 @@ export default function BuyTickets() {
     let allMovies = [];
     for (let i = 0; i < ids.length; i++) {
       let id = ids[i].id;
-      let response = await axios.get(`http://www.omdbapi.com/?i=${id}&apikey=${apiKey}`);
+      let response = await axios.get(`https://www.omdbapi.com/?i=${id}&apikey=${apiKey}`);
       let data = response.data;
       allMovies.push(data);
     }
